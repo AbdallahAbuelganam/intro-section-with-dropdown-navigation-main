@@ -1,0 +1,94 @@
+:root {
+    --color-White: hsl(0, 0%, 98%);
+    --color-Gray: hsl(0, 0%, 41%);
+    --color-Black: hsl(0, 0%, 8%);
+}
+
+/*      VV this code should been edited and add the static fonts. vv*/
+@supports not (font-variation-settings: normal) {
+    @font-face {
+        font-family: 'Epilogue';
+        src: url('/fonts/Epilogue-Italic-VariableFont_wght.ttf') format('ttf'),
+            url('/fonts/Epilogue-VariableFont_wght.ttf') format('ttf');
+        font-weight: normal;
+    }
+
+    @font-face {
+        font-family: 'Epilogue';
+        src: url('/fonts/Epilogue-Italic-VariableFont_wght.ttf') format('ttf'),
+            url('/fonts/Epilogue-VariableFont_wght.ttf') format('ttf');
+        font-weight: bold;
+    }
+
+    body {
+        font-family: Roboto;
+    }
+}
+
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-family: 'Epilogue';
+        src: url('/fonts/Epilogue-Italic-VariableFont_wght.ttf') format('ttf'),
+            url('/fonts/Epilogue-VariableFont_wght.ttf') format('ttf');
+        font-weight: 100 1000;
+        font-stretch: 25% 151%;
+    }
+}
+
+
+
+body {
+    font-family: 'Epilogue', Arial, sans-serif;
+    font-size: 18px;
+    /* margin: 0; */
+}
+
+header {
+    max-height: 120px;
+}
+
+header .logo {
+    float: left;
+}
+
+header .header-contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header .header-contant .left-h {
+    display: flex;
+    flex-direction: row;
+}
+
+header .header-contant .left-h>* {
+    padding: 10px 25px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+main>* {
+    max-width: 500px;
+    overflow: hidden;
+}
+
+main .left-content h1 {
+    font-weight: bold;
+    font-size: 82px;
+}
+
+main .left-content p {
+    font-weight: 500;
+    font-size: 20px;
+    padding-right: 85px;
+    margin: 50px 0px;
+}
+
+main .right-content img {
+    max-width: inherit;
+}
