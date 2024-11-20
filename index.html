@@ -8,8 +8,11 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <!-- adding fonts to css -->
+    <link media="screen and (min-width: 700px)" rel="stylesheet" href="CSS/style.css">
     <!-- desktop design -->
+    <link media="screen and (max-width: 700px)" rel="stylesheet" href="CSS/mobile.css">
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -35,14 +38,31 @@
         <div class="logo"><img src="images/logo.svg" alt="snap-logo"></div>
         <div class="header-contant">
             <div class="left-h">
-                <div class="l-item p-item">Features <img src="images/icon-arrow-down.svg" alt="V"></div>
-                <div class="l-item p-item">Company  <img src="images/icon-arrow-down.svg" alt="A"></div>
+                <div class="l-item p-item">Features
+                    <img src="images/icon-arrow-up.svg" alt="V" class="ARdown" height="8px">
+                    <img src="images/icon-arrow-down.svg" alt="A" class="ARup" height="8px">
+                    <div class="ch-list">
+                        <div class="ch-item"><span><img src="images/icon-todo.svg"></img></span>Todo List</div>
+                        <div class="ch-item"><span><img src="images/icon-calendar.svg"></img></span>Calendar</div>
+                        <div class="ch-item"><span><img src="images/icon-reminders.svg"></img></span>Reminders</div>
+                        <div class="ch-item"><span><img src="images/icon-planning.svg"></img></span>Planning</div>
+                    </div>
+                </div>
+                <div class="l-item p-item">Company
+                    <img src="images/icon-arrow-up.svg" alt="V" class="ARdown" height="8px">
+                    <img src="images/icon-arrow-down.svg" alt="A" class="ARup" height="8px">
+                    <div class="ch-list">
+                        <div class="ch-item">History</div>
+                        <div class="ch-item">Our Team</div>
+                        <div class="ch-item">Blog</div>
+                    </div>
+                </div>
                 <div class="l-item">Careers </div>
-                <div class="l-item">About   </div>
+                <div class="l-item">About </div>
             </div>
             <div class="right-h">
-                <button>Login</button>
-                <button>Register</button>
+                <button class="Login">Login</button>
+                <button class="Register">Register</button>
             </div>
         </div>
     </header>
@@ -59,16 +79,16 @@
                 Learn more
             </button>
             <div class="clients">
-                <img src="images/client-audiophile.svg" alt="audiophile"><img src="images/client-databiz.svg"
-                    alt="databiz"><img src="images/client-maker.svg" alt="maker"><img src="images/client-meet.svg"
-                    alt="meet">
+                <img src="images/client-databiz.svg" alt="databiz"><img src="images/client-audiophile.svg"
+                    alt="audiophile"><img src="images/client-meet.svg" alt="meet"><img src="images/client-maker.svg"
+                    alt="maker">
             </div>
         </div>
         <div class="right-content"><img src="images/image-hero-desktop.png" alt=""></div>
     </main>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">abdallah</a>.
+        Coded by <a href="#">abdallah abuelganam</a>.
     </div>
 </body>
 
