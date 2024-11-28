@@ -29,17 +29,21 @@ header {
         justify-content: space-between;
         align-items: baseline;
 
+        .close-menu {
+            display: none;
+        }
+
         .left-h {
             display: flex;
             flex-direction: row;
 
             .l-item {
                 .ARup {
-                    display: none;
+                    display: inline;
                 }
 
                 .ARdown {
-                    display: inline;
+                    display: none;
                 }
 
                 .ch-list {
@@ -55,7 +59,7 @@ header {
                     .ch-item {
                         margin: 10px;
                         font-size: medium;
-                        
+
                         span {
                             display: inline-block;
                             width: 27px;
@@ -74,11 +78,11 @@ header {
                 cursor: pointer;
 
                 .ARup {
-                    display: inline;
+                    display: none;
                 }
 
                 .ARdown {
-                    display: none;
+                    display: inline;
                 }
 
                 .ch-list {
@@ -91,6 +95,10 @@ header {
                 padding: 10px 25px;
             }
         }
+    }
+
+    .menu {
+        display: none;
     }
 }
 
