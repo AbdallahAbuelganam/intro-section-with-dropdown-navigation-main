@@ -24,7 +24,8 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ## Screenshot
-![Desktop Design](./design/Screenshot.jpeg)
+![Desktop Design](./design/screenshots/desktop%20Screenshot.jpeg)
+![Mobile Design](./design/screenshots/mobile%20screenshot.jpeg)
 
 ## Links
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-challenge-on-frontend-mentor-CXVfND3pJH)
